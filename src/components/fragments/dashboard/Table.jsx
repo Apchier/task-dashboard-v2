@@ -68,6 +68,36 @@ export default function Table() {
                         <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
                     </td>
                 </tr>
+                <tr className="bg-gray-200">
+                    <td className="w-1/3 text-left py-3 px-4">Emma</td>
+                    <td className="w-1/3 text-left py-3 px-4">Johnson</td>
+                    <td className="text-left py-3 px-4">
+                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
+                    </td>
+                    <td className="text-left py-3 px-4">
+                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td className="w-1/3 text-left py-3 px-4">Oliver</td>
+                    <td className="w-1/3 text-left py-3 px-4">Williams</td>
+                    <td className="text-left py-3 px-4">
+                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
+                    </td>
+                    <td className="text-left py-3 px-4">
+                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                    </td>
+                </tr>
+                <tr className="bg-gray-200">
+                    <td className="w-1/3 text-left py-3 px-4">Isabella</td>
+                    <td className="w-1/3 text-left py-3 px-4">Brown</td>
+                    <td className="text-left py-3 px-4">
+                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
+                    </td>
+                    <td className="text-left py-3 px-4">
+                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                    </td>
+                </tr>
             </tbody>
         </table>
     )

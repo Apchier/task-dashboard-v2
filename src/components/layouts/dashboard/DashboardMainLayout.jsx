@@ -6,10 +6,10 @@ import { Outlet } from "react-router-dom";
 
 export default function App() {
     return (
-        <div className="bg-gray-100 font-family-karla flex">
+        <div className="flex min-h-vh bg-gray-100 font-family-karla">
             <Aside />
 
-            <div className="w-full flex flex-col h-full">
+            <div className="w-full flex flex-col h-full content">
                 <Header />
                 <Outlet />
                 {/* <Dashboard /> */}

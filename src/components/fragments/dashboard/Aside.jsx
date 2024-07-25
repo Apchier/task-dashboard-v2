@@ -9,11 +9,11 @@ import { FaPlus } from "react-icons/fa";
 
 export default function Aside() {
     return (
-        <aside className="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
+        <aside className="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl aside-fixed">
             <div className="p-6">
-                <a href="index.html" className="text-white text-3xl font-semibold uppercase hover:text-gray-300">
-                    Admin
-                </a>
+                <AsideLink>
+                    <AsideLink.Admin to="/dashboard" className={"text-white text-3xl font-semibold uppercase hover:text-gray-300"} text="Admin" />
+                </AsideLink>
                 <button className="w-full bg-white cta-btn font-semibold gap-1 py-2 mt-5 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
                     <FaPlus /> New Report
                 </button>

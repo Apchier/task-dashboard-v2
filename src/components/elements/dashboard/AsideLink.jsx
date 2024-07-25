@@ -9,6 +9,14 @@ const AsideLink = ({ children }) => {
     )
 }
 
+const Admin = ({ to, text }) => {
+    return (
+        <Link to={to} className="text-white text-3xl font-semibold uppercase hover:text-gray-300">
+            {text}
+        </Link>
+    )
+}
+
 const Emblem = ({ icon, text, className, to }) => {
     return (
         <Link to={to} className="flex items-center text-white opacity-75 hover:opacity-100 py-4 gap-3 pl-6 nav-item cursor-pointer">
@@ -18,5 +26,6 @@ const Emblem = ({ icon, text, className, to }) => {
     )
 }
 
+AsideLink.Admin = Admin
 AsideLink.Emblem = Emblem
 export default AsideLink

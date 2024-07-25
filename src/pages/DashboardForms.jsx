@@ -1,3 +1,5 @@
+import Footer from "../components/fragments/dashboard/Footer";
+
 export default function DashboardForms() {
     return (
         <div className="w-full h-screen overflow-x-hidden border-t flex flex-col">
@@ -50,15 +52,15 @@ export default function DashboardForms() {
                                     <input className="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_address" name="cus_address" type="text" required placeholder="Street" aria-label="Address" />
                                 </div>
                                 <div className="mt-2">
-                                    <label className="hidden text-sm block text-gray-600" htmlFor="cus_city">City</label>
+                                    <label className="hidden text-sm  text-gray-600" htmlFor="cus_city">City</label>
                                     <input className="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_city" name="cus_city" type="text" required placeholder="City" aria-label="City" />
                                 </div>
                                 <div className="inline-block mt-2 w-1/2 pr-1">
-                                    <label className="hidden block text-sm text-gray-600" htmlFor="cus_country">Country</label>
+                                    <label className="hidden  text-sm text-gray-600" htmlFor="cus_country">Country</label>
                                     <input className="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_country" name="cus_country" type="text" required placeholder="Country" aria-label="Country" />
                                 </div>
                                 <div className="inline-block mt-2 -mx-1 pl-1 w-1/2">
-                                    <label className="hidden block text-sm text-gray-600" htmlFor="cus_zip">Zip</label>
+                                    <label className="hidden  text-sm text-gray-600" htmlFor="cus_zip">Zip</label>
                                     <input className="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_zip" name="cus_zip" type="text" required placeholder="Zip" aria-label="Zip" />
                                 </div>
                                 <p className="text-lg text-gray-800 font-medium py-4">Payment information</p>
@@ -74,10 +76,7 @@ export default function DashboardForms() {
                     </div>
                 </div>
             </main>
-
-            <footer className="w-full bg-white text-right p-4">
-                Built by <a target="_blank" href="https://davidgrzyb.com" className="underline">David Grzyb</a>.
-            </footer>
+            <Footer />
         </div>
     )
 }

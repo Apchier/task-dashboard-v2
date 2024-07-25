@@ -1,3 +1,5 @@
+import Footer from "../components/fragments/dashboard/Footer";
+
 export default function DashboardTables() {
     return (
         <div className="w-full h-screen overflow-x-hidden border-t flex flex-col">
@@ -237,9 +239,7 @@ export default function DashboardTables() {
                 </div>
             </main>
 
-            <footer className="w-full bg-white text-right p-4">
-                Built by <a target="_blank" rel="noopener noreferrer" href="https://davidgrzyb.com" className="underline">David Grzyb</a>.
-            </footer>
+            <Footer />
         </div>
     )
 }

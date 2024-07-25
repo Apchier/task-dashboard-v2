@@ -9,12 +9,14 @@ import DashboardCalendar from "./pages/DashboardCalendar";
 import {
     createBrowserRouter,
     Route,
-    createRoutesFromElements
+    createRoutesFromElements,
+    Navigate
 } from "react-router-dom";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<DashboardMainLayout />}>
+            <Route index element={<Navigate to="dashboard" />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="blankpage" element={<DashboardBlankPage />} />
             <Route path="tables" element={<DashboardTables />} />
@@ -24,4 +26,3 @@ export const router = createBrowserRouter(
         </Route>
     )
 )
-

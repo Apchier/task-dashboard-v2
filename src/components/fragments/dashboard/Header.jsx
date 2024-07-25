@@ -30,9 +30,9 @@ export default function Header() {
 
             <header className="w-full bg-sidebar py-5 px-6 sm:hidden">
                 <div className="flex items-center justify-between">
-                    <a href="index.html" className="text-white text-3xl font-semibold uppercase hover:text-gray-300">
-                        Admin
-                    </a>
+                    <HeaderLink>
+                        <HeaderLink.Admin to="/dashboard" className={"text-white text-3xl font-semibold uppercase hover:text-gray-300"} text="Admin" />
+                    </HeaderLink>
                     <button className="text-white text-3xl focus:outline-none">
                         <FaXmark />
                     </button>
