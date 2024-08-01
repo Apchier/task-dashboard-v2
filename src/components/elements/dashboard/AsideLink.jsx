@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom"
 
 const AsideLink = ({ children }) => {
@@ -18,8 +19,10 @@ const Admin = ({ to, text }) => {
 }
 
 const Emblem = ({ icon, text, className, to }) => {
+    const location = useLocation()
+    const isActive = location.pathname === to
     return (
-        <Link to={to} className="flex items-center text-white opacity-75 hover:opacity-100 py-4 gap-3 pl-6 nav-item cursor-pointer">
+        <Link to={to} className={`flex items-center text-white opacity-75 hover:opacity-100 py-4 gap-3 pl-6 nav-item cursor-pointer ${isActive ? 'active-nav-link' : ''}`}>
             <span className={`${className}`}>{icon}</span>
             {text}
         </Link>

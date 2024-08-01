@@ -1,3 +1,5 @@
+import TableElement from "../../elements/dashboard/TableBody";
+
 export default function Table() {
     return (
         <table className="min-w-full bg-white">
@@ -17,88 +19,56 @@ export default function Table() {
                     </th>
                 </tr>
             </thead>
-            <tbody className="text-gray-700">
-                <tr>
-                    <td className="w-1/3 text-left py-3 px-4">Lian</td>
-                    <td className="w-1/3 text-left py-3 px-4">Smith</td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
-                    </td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
-                    </td>
-                </tr>
-                <tr className="bg-gray-200">
-                    <td className="w-1/3 text-left py-3 px-4">Emma</td>
-                    <td className="w-1/3 text-left py-3 px-4">Johnson</td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
-                    </td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td className="w-1/3 text-left py-3 px-4">Oliver</td>
-                    <td className="w-1/3 text-left py-3 px-4">Williams</td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
-                    </td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
-                    </td>
-                </tr>
-                <tr className="bg-gray-200">
-                    <td className="w-1/3 text-left py-3 px-4">Isabella</td>
-                    <td className="w-1/3 text-left py-3 px-4">Brown</td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
-                    </td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td className="w-1/3 text-left py-3 px-4">Lian</td>
-                    <td className="w-1/3 text-left py-3 px-4">Smith</td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
-                    </td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
-                    </td>
-                </tr>
-                <tr className="bg-gray-200">
-                    <td className="w-1/3 text-left py-3 px-4">Emma</td>
-                    <td className="w-1/3 text-left py-3 px-4">Johnson</td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
-                    </td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td className="w-1/3 text-left py-3 px-4">Oliver</td>
-                    <td className="w-1/3 text-left py-3 px-4">Williams</td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
-                    </td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
-                    </td>
-                </tr>
-                <tr className="bg-gray-200">
-                    <td className="w-1/3 text-left py-3 px-4">Isabella</td>
-                    <td className="w-1/3 text-left py-3 px-4">Brown</td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
-                    </td>
-                    <td className="text-left py-3 px-4">
-                        <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
-                    </td>
-                </tr>
-            </tbody>
+            <TableElement>
+                <TableElement.Row1
+                    name="Lian"
+                    lastName="Smith"
+                    phone="622322662"
+                    email="jonsmith@mail.com"
+                />
+                <TableElement.Row1
+                    name="Emma"
+                    lastName="Johnson"
+                    phone="622322662"
+                    email="jonsmith@mail.com"
+                />
+                <TableElement.Row1
+                    name="Oliver"
+                    lastName="Williams"
+                    phone="622322662"
+                    email="jonsmith@mail.com"
+                />
+                <TableElement.Row1
+                    name="Isabella"
+                    lastName="Brown"
+                    phone="622322662"
+                    email="jonsmith@mail.com"
+                />
+                <TableElement.Row1
+                    name="Lian"
+                    lastName="Smith"
+                    phone="622322662"
+                    email="jonsmith@mail.com"
+                />
+                <TableElement.Row1
+                    name="Emma"
+                    lastName="Johnson"
+                    phone="622322662"
+                    email="jonsmith@mail.com"
+                />
+                <TableElement.Row1
+                    name="Oliver"
+                    lastName="Williams"
+                    phone="622322662"
+                    email="jonsmith@mail.com"
+                />
+                <TableElement.Row1
+                    name="Isabella"
+                    lastName="Brown"
+                    phone="622322662"
+                    email="jonsmith@mail.com"
+                />
+            </TableElement>
         </table>
     )
 }
