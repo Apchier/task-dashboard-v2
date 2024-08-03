@@ -26,7 +26,7 @@ export const router = createBrowserRouter(
             <Route path="tables" element={<DashboardTables />} />
             <Route path="forms" element={<DashboardForms />} />
             <Route path="tabbedcontent" element={<DashboardTabbed />}>
-                <Route index element={<Tab1 />} />
+                <Route index element={<Navigate to="tab1" />} />
                 <Route path="tab1" element={<Tab1 />} />
                 <Route path="tab2" element={<Tab2 />} />
                 <Route path="tab3" element={<Tab3 />} />
